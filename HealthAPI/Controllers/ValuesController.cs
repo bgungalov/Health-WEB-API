@@ -24,10 +24,10 @@ namespace HealthAPI.Controllers
         [HttpGet("{id}", Name = "Get")]
         public string Get(int id)
         {
-           if (id > -1 && id < days.Count())
-            return days[id];
+            if (id > -1 && id < days.Count())
+                return days[id];
             else
-            return "";
+                return "";
 
         }
 
